@@ -1,12 +1,7 @@
-var earl = require('../node-earl');
+var earl = require('./lib/earl-webid.js');
 
-var earlDocument = new earl.EarlDocument();
+var earlWebID = new earl.earlWebid();
 
-// add wit prefix
-earlDocument.setPrefix("wit", "http://purl.org/dc/terms/");
+earlWebID.certificateProvided(true);
 
-earlDocument.addAssertion(":assert1", ":certificate", "wit:certificateProvidedSAN");
-
-earlDocument.getAssertion(":assert1").passed();
-
-earlDocument.writeFile('test.txt');
+earlWebID.Document.writeFile('test.txt');
