@@ -5,8 +5,8 @@ var earlDocument = new earl.EarlDocument();
 // add wit prefix
 earlDocument.setPrefix("wit", "http://purl.org/dc/terms/");
 
-earlDocument.addAssertion(":assert1", ":certificate", "wit:certificateProvidedSAN").toRDF();
+earlDocument.addAssertion(":assert1", ":certificate", "wit:certificateProvidedSAN");
 
-earlDocument.getAssertion(":assert1").addResult("earl:passed").toRDF();
+earlDocument.getAssertion(":assert1").passed();
 
 earlDocument.writeFile('test.txt');
