@@ -4,7 +4,8 @@ Node.js module to help producing EARL (http://www.w3.org/WAI/intro/earl) reports
 
 Documentation is available here : http://magnetik.github.com/node-earl/doc/
 
-Example :
+Example
+
     var earl = require('../node-earl');
     // Creating EARL document
     var earlDocument = new earl.EarlDocument();
