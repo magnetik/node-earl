@@ -1,7 +1,7 @@
 {
-    "name": "node-earl",
+    "name": "earl",
     "version": "0.0.1",
-    "description": "Earl",
+    "description": "EARL (http://www.w3.org/WAI/intro/earl) implementation",
     "keywords": [
       "earl",
       "w3c",
@@ -32,15 +32,6 @@
             "url": "git@github.com:magnetik/node-earl.git"
         }
     ],
-    "implements": [
-        "http://www.w3.org/TR/REC-DOM-Level-1"
-    ],
-    "dependencies": {
-       "htmlparser" : ">=1.7.0",
-       "request"    : ">=1.0.0",
-       "cssom"      : ">=0.2.0",
-       "contextify" : ">=0.0.3"
-    },
     "engines" : { "node" : ">=0.5.10" },
     "main": "./lib/node-earl"
 }

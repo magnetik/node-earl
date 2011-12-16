@@ -6,7 +6,7 @@ Documentation is available here : http://magnetik.github.com/node-earl/doc/
 
 Example
 
-    var earl = require('../node-earl');
+    var earl = require('earl');
     // Creating EARL document
     var earlDocument = new earl.EarlDocument();
     // add wit prefix
@@ -28,6 +28,12 @@ is producing :
     <assert1Result> <http://www.w3.org/ns/earl#outcome> <http://purl.org/dc/terms/passed> . 
 
 Any help is welcome !
+
+## Installation
+
+Node-earl is available on npm :
+
+    npm install earl
 
 ## License
 
